@@ -9,15 +9,21 @@ class Item (which returns a String). Your task is to print the attack value and 
 the weapon of the hero. 
 
 public class Exercise2
+
 {
 
   public static void main(String[] srgs)
+
   
   {
     Hero theHero = new Hero("Arthur");
     System.out.println(theHero.getWeapon().getName());
+
+    
     
     //Your code goes here
+
+    
     
   }
   
@@ -26,38 +32,56 @@ public class Exercise2
 
 
 class Hero
+
 {
+
   private String name;
+  
   private Item weapon;
+  
   public Hero(String name)
+  
   {
     this.name = name;
+    
     this.weapon = new Item("sword", 10, 1);
+    
   }
+  
   public Item getWeapon()
+  
   {
+  
     return this.weapon;
   }
+  
 }
 
 class Item
+
 {
   private String name;
   private int attack;
   private int defense;
   
+  
   public Item(String name, int attack, int defense)
+  
   
   {
   this.name = name;
   this.attack = attack;
   this.defense = defense;
   }
+  
 
 
   public String getName()
+  
   {
+  
   return name;
+  
   }
 
 }
