@@ -10,14 +10,20 @@ the weapon of the hero.
 
 public class Exercise2
 {
+
   public static void main(String[] srgs)
+  
   {
     Hero theHero = new Hero("Arthur");
     System.out.println(theHero.getWeapon().getName());
+    
     //Your code goes here
+    
   }
+  
 
 }
+
 
 class Hero
 {
